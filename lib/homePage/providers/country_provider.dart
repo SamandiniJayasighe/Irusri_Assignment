@@ -64,7 +64,6 @@ class CountryProvider with ChangeNotifier {
       }
     }
     _loading = false;
-    print(_countries);
     notifyListeners();
   }
 
