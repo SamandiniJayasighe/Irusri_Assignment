@@ -47,7 +47,7 @@ class CountryProvider with ChangeNotifier {
     }
   }
 
-  void fetchCountries() async {
+ Future<void> fetchCountries() async {
     _loading = true;
     _error = '';
     notifyListeners();
