@@ -1,16 +1,44 @@
 # irusri_se_assignment
 
-A new Flutter project.
+## Flutter Commands
 
-## Getting Started
+- **Build Runner**: Generates files using build_runner.
+  
+  ```bash
+  dart run build_runner build
 
-This project is a starting point for a Flutter application.
+- **Run Application **: Runs the Flutter application on the connected device.
+  
+  ```bash
+  flutter run
 
-A few resources to get you started if this is your first Flutter project:
+- **Run Tests **:  Executes the unit tests for the project.
+  
+  ```bash
+  flutter test
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+- **Release APK **:  Builds the APK in release mode for distribution.
+  
+  ```bash
+  flutter build apk --release
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Dependencies
+
+This project uses the following packages:
+
+- **`Retrofit`**
+- **`Dio`**
+- **`Provider`**
+- **`Mockito`**
+
+  ```yaml
+  dependencies:
+    retrofit: ^4.2.0
+    dio: ^5.6.0
+    provider: ^6.1.2
+    mockito: ^5.4.4
+  
+
+
+
+  
