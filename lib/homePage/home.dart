@@ -28,13 +28,13 @@ class _HomePageState extends State<HomePage> {
   Widget build(BuildContext context) {
     double height = MediaQuery.of(context).size.height - 20;
     double width = MediaQuery.of(context).size.width;
-    return Scaffold(
+    return SafeArea(child:Scaffold(
         resizeToAvoidBottomInset: false,
         body: Consumer<CountryProvider>(
           builder: (context, provider, child) {
             if (provider.loading) {
               return const Center(child:SpinKitWave(
-                color: Colors.deepPurple,
+                color: Color(0xFF00004B),
                 size: 50.0,
               ) );
             } else if (provider.error.isNotEmpty) {
@@ -49,9 +49,6 @@ class _HomePageState extends State<HomePage> {
                 child: SizedBox(
                 height: height,
                 width: width,
-                child: SafeArea(
-                  child: Padding(
-                    padding: const EdgeInsets.all(10.0),
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.center,
                       mainAxisAlignment: MainAxisAlignment.spaceAround,
@@ -68,12 +65,10 @@ class _HomePageState extends State<HomePage> {
                             )),
                       ],
                     ),
-                  ),
-                ),
               ),
               );
             }
           },
-        ));
+        )));
   }
 }

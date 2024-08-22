@@ -16,7 +16,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'IRUSRI SE Assignment',
       theme: ThemeData(
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple, secondary: Colors.deepPurpleAccent),
+        colorScheme: ColorScheme.fromSeed(seedColor: const Color(0xFF00004B), secondary: const Color(0xFF00004B)),
         useMaterial3: true,
       ),
       routes: {
